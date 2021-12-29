@@ -1,0 +1,82 @@
+mat-toolbar {
+  height: 100% !important;
+  -webkit-box-shadow: 0 0 11px rgba(0, 0, 0, 0.13);
+  box-shadow: 0 0 11px rgba(0, 0, 0, 0.13);
+   // background-color: white !important;
+   background-color: pink !important;
+   background-color: aqua !important;
+   display: flex !important;
+}
+mat-toolbar-row {
+  padding: 0 !important;
+  margin: 0;
+  height: auto !important;
+  
+}
+mat-sidenav-container {
+  // min-height: 90vh;
+  background: white;
+}
+mat-sidenav {
+  // width: 20vw
+}
+mat-sidenav-content {
+  background: #f3f3f3;
+  padding: 5vh;
+  min-height: 90vh;
+}
+
+
+.branding {
+  // width: 20vw;
+  // height: 10vh;
+  // background-color: #424242;
+}
+
+.notifictions {
+  // right: 15vw;
+  // position: absolute;
+  // float: left;
+}
+
+mat-icon {
+  margin: 20px !important;
+  cursor: pointer;
+  float: right;
+}
+
+
+
+.example-card mat-card-footer .row {
+  margin: 0;
+}
+mat-card{
+    // padding-right: 5vw !important;
+    box-shadow: 0px 5px 5px 0px  rgba(0,0,0,.4) !important;
+    background: white !important;
+    margin-bottom: 3vh;
+    color: rgba(0, 0, 0, 0.6) !important;
+    
+
+}
+.card-wrapper{
+    padding-left: 1vw;
+    padding-bottom: 3vh;
+}
+.right-nav-button{
+  margin: 0 !important;
+    width: 35px !important;
+    height: 35px !important;
+    background: skyblue !important;
+    padding: 5px 7px;
+    border-radius: 50% 0 0 50%;
+    position: absolute;
+    right: 0;
+    top: 5vh;
+    z-index: 10;
+}
+.side-nav-right{
+  max-height: 20vh;
+
+  background: linear-gradient(to right,#f52f2f, #feb798) !important;
+}

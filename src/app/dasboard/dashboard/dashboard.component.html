@@ -1,0 +1,54 @@
+<mat-toolbar>
+  <mat-toolbar-row class="row">
+    <div class="branding col-md-2 col-lg-2 col-sm-12">
+      <span><img src="./assets/logo/otis_logo.png" style="height:8vh;"></span>
+      <!-- <mat-slide-toggle checked (click)="sidenav.toggle()"></mat-slide-toggle> -->
+      <mat-icon (click)="sidenav.toggle()" color="primary">menu</mat-icon>
+    </div>
+    <div class="search col-md-4 col-lg-4 col-sm-6 col-6">
+      <mat-icon color="primary">search</mat-icon>
+      <mat-icon color="primary">fullscreen</mat-icon>
+    </div>
+    <div class="notifictions col-md-6 col-lg-6 col-sm-6 col-6">
+      <mat-icon color="primary">notification_important</mat-icon>
+      <mat-icon color="primary">chat</mat-icon>
+      <mat-icon color="primary">settings</mat-icon>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav class="col-md-2 col-lg-2" #sidenav [mode]="sideNavMode" opened [opened]="sideNavOpen" role="navigation">
+    <otis-side-nav-content></otis-side-nav-content>
+  </mat-sidenav>
+  <mat-sidenav class="side-nav-right col-2" position="end" mode="over" #sidenavright closed>
+
+
+    <div class="row">
+      <div class="col">
+        <mat-slide-toggle color="primary"></mat-slide-toggle>
+      </div>
+      <div class="col">
+        <mat-slide-toggle color="warn" checked></mat-slide-toggle>
+      </div>
+    </div>
+    <div class="">
+      <mat-radio-group>
+        <mat-radio-button>
+          1
+        </mat-radio-button>
+        <mat-radio-button>
+          2
+        </mat-radio-button>
+        <mat-radio-button>
+          3
+        </mat-radio-button>
+      </mat-radio-group>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div>
+      <mat-icon class="right-nav-button" color="primary" (click)="sidenavright.toggle()">filter_list</mat-icon>
+    </div>
+    <otis-main-content></otis-main-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>
